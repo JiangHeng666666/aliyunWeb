@@ -31,6 +31,42 @@ import tableUrl from '../images/applicaiton/table.png';
 
 
 class App extends Component {
+
+  state = {
+    printText: "",
+    printIndex: 0
+  }
+
+  componentDidMount() {
+    this.intervalPrint = setInterval(() => this.handleAutoPrint(), 200);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.intervalPrint);
+  }
+
+  handleAutoPrint = () => {
+    if (this.state.printIndex < 11) {
+      this.setState({
+        printText: this.state.printText + printInfo[this.state.printIndex],
+        printIndex: this.state.printIndex + 1
+      });
+      console.log(this.state.printIndex);
+    } else {
+      if (this.state.printIndex < 20) {
+        this.setState({
+          printIndex: this.state.printIndex + 1
+        });
+      } else {
+        this.setState({
+          printText: "",
+          printIndex: 0
+        });
+      }
+    }
+  }
+
+
   render() {
     return (
       <div className="App">
