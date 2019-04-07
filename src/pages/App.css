@@ -1,24 +1,193 @@
+.App{
+  width: 100%;
+}
 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*============================================ 
+ *  Header 
+ *===========================================*/
+.j-header{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+
+.j-header img{
+  margin-left: 24px;
+}
+
+.j-header ul{
+  list-style: none;
+}
+
+.j-header ul li{
+  float: left;
+  width: 160px;
+  font-size: 20px;
+  color: #fff;
+} 
+
+.j-header ul li span:hover{
+  cursor: pointer;
+  border-bottom: 2px solid #dba444;
+}
+
+.j-header a{
+  width: 80px;
+  padding: 10px 0;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+}
+/*============================================ 
+ *  Banner
+ *===========================================*/
+.j-banner{
+  height: 100vh;
+  background: #666666;
+}
+
+.j-banner-text{
+  float: left;
+  height: 100%;
+  width: 50%;
+  background: #333;
+  display: flex;
+  align-items: center
+}
+
+.j-banner-text .j-banner-text-container{
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.j-banner-text .j-banner-text-container h1{
+  margin: 0;
+  padding: 0;
+  font-size: 5em;
+}
+
+.j-banner-text .j-banner-text-container h2{
+  margin: 0;
+  padding: 0;
+  font-size: 4em;
+}
+
+
+.j-banner-img{
+  height: 100%;
+  width: 50%;
+  float: right;
+}
+
+.j-banner-img img{
+  height: 100%;
+  float: right; 
+}
+
+.j-banner-skill{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 150px;
+  width: 60%;
+  background: #dba444;
+}
+
+.j-banner-skill ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.j-banner-skill ul li{
+  float: left;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.j-banner-skill  p{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  text-align: right;
+  margin-right: 8px;
+}
+
+/*============================================ 
+ *  Application
+ *===========================================*/
+
+ .j-application{
+   /* height: 100vh; */
+   height: 1080px;
+   width: 100%;
+   background: #333;
+   position: relative;
+ }
+
+ .j-application-background{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+    overflow: hidden;
+ }  
+
+ .j-application-background .j-application-bk-1 {
+    font-size: 400px;
+   
+    color: #515151;
+ }
+
+.j-application-background .j-application-bk-1{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.j-application-background .j-application-bk-2 img{
+  position: absolute;
+  right: 0;
+}
+
+.j-application-container{
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  color: #fff;
+}
+
+
+.j-application-card{
+  position: relative;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+ .j-application-card ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-}  to {
-    transform: rotate(360deg);
-  }
+.j-application-card ul li{
+  margin: 0;
+  padding: 0;
+  width: 160px;
+  height: 160px;
+  background: #dba444;
 }
