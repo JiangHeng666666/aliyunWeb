@@ -1,59 +1,75 @@
-.App{
-  width: 100%;
+@font-face{
+  font-family: 'TTTGB'; 
+  src: url('../fonts/TTTGB-Medium.c2224a8.eot');
+  src:
+  url('../fonts/TTTGB-Medium.c2224a8.woff2') format('woff2'),
+  url('../fonts/TTTGB-Medium.c2224a8.woff') format('woff'),
+  url('../fonts/TTTGB-Medium.c2224a8.ttf') format('truetype'),
+  url('../fonts/TTTGB-Medium.c2224a8.svg') format('svg');
 }
 
+.App {
+  width: 100%;
+  min-width: 1200px;
+  font-family: "TTTGB";
+}
 
 /*============================================ 
  *  Header 
  *===========================================*/
-.j-header{
+
+.j-header {
   position: absolute;
-  top:0;
+  top: 0;
   width: 100%;
   height: 100px;
+  min-width: 1200px;
   background: rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
 }
 
-.j-header img{
+.j-header img {
   margin-left: 24px;
 }
 
-.j-header ul{
+.j-header ul {
   list-style: none;
 }
 
-.j-header ul li{
+.j-header ul li {
   float: left;
-  width: 160px;
   font-size: 20px;
   color: #fff;
-} 
+  margin: 0 60px;
+}
 
-.j-header ul li span:hover{
+.j-header ul li span:hover {
   cursor: pointer;
   border-bottom: 2px solid #dba444;
 }
 
-.j-header a{
-  width: 80px;
-  padding: 10px 0;
-  font-size: 20px;
+.j-header a {
   color: #fff;
   text-decoration: none;
-  background: #333;
   text-align: center;
 }
+
+.j-header .button{
+  background: #333;
+  padding: 10px 30px;
+}
+
 /*============================================ 
  *  Banner
  *===========================================*/
-.j-banner{
+
+.j-banner {
   height: 100vh;
   background: #666666;
 }
 
-.j-banner-text{
+.j-banner-text {
   float: left;
   height: 100%;
   width: 50%;
@@ -62,46 +78,46 @@
   align-items: center
 }
 
-.j-banner-text .j-banner-text-container{
+.j-banner-text .j-banner-text-container {
   width: 80%;
   margin: 0 auto;
   color: #fff;
 }
 
-.j-banner-text .j-banner-text-container h1{
+.j-banner-text .j-banner-text-container h1 {
   margin: 0;
   padding: 0;
   font-size: 5em;
 }
 
-.j-banner-text .j-banner-text-container h2{
+.j-banner-text .j-banner-text-container h2 {
   margin: 0;
   padding: 0;
   font-size: 4em;
 }
 
-
-.j-banner-img{
+.j-banner-img {
   height: 100%;
   width: 50%;
   float: right;
 }
 
-.j-banner-img img{
+.j-banner-img img {
   height: 100%;
-  float: right; 
+  float: right;
 }
 
-.j-banner-skill{
+.j-banner-skill {
   position: absolute;
   left: 0;
   bottom: 0;
   height: 150px;
   width: 60%;
+  min-width: 810px;
   background: #dba444;
 }
 
-.j-banner-skill ul{
+.j-banner-skill ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -110,7 +126,7 @@
   margin: 0 auto;
 }
 
-.j-banner-skill ul li{
+.j-banner-skill ul li {
   float: left;
   width: 25%;
   height: 100%;
@@ -118,7 +134,7 @@
   align-items: center;
 }
 
-.j-banner-skill  p{
+.j-banner-skill p {
   margin: 0;
   padding: 0;
   font-size: 1.5em;
@@ -130,64 +146,249 @@
  *  Application
  *===========================================*/
 
- .j-application{
-   /* height: 100vh; */
-   height: 1080px;
-   width: 100%;
-   background: #333;
-   position: relative;
- }
+.j-application {
+  /* height: 100vh; */
+  height: 1080px;
+  width: 100%;
+  background: #333;
+  position: relative;
+}
 
- .j-application-background{
-   position: absolute;
-   width: 100%;
-   height: 100%;
-    overflow: hidden;
- }  
+.j-application-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
- .j-application-background .j-application-bk-1 {
-    font-size: 400px;
-   
-    color: #515151;
- }
+.j-application-background .j-application-bk-1 {
+  font-size: 400px;
+  color: #515151;
+}
 
-.j-application-background .j-application-bk-1{
+.j-application-background .j-application-bk-1 {
   position: absolute;
   left: 0;
   bottom: 0;
 }
 
-.j-application-background .j-application-bk-2 img{
+.j-application-background .j-application-bk-2 img {
   position: absolute;
   right: 0;
 }
 
-.j-application-container{
+.j-application-background .j-application-bk-3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.j-application-container {
   position: absolute;
   z-index: 99;
   width: 100%;
   color: #fff;
 }
 
-
-.j-application-card{
+.j-application-card {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
- .j-application-card ul{
+.j-application-card ul {
   list-style: none;
   margin: 0;
   padding: 0;
- 
 }
 
-.j-application-card ul li{
+.j-application-card ul li {
   margin: 0;
   padding: 0;
   width: 160px;
   height: 160px;
+}
+
+.j-a-c-item {
+  width: 100%;
+  height: 100%;
   background: #dba444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.j-a-c-item h4 {
+  color: #090909;
+  margin: 0;
+  padding: 0;
+  text-align: center
+}
+
+.j-a-c-item:hover{
+  cursor: pointer;
+  background: #e7e6e7;
+}
+
+/*============================================ 
+ *  Skill
+ *===========================================*/
+
+.j-skill {
+  width: 100%;
+  height: 1080px;
+  background: #333;
+  position: relative;
+}
+
+.j-s-b-block-1 {
+  z-index: 9;
+  height: 100%;
+  width: 50%;
+  background: #dba444;
+  position: absolute;
+  right: 0;
+}
+
+.j-s-b-block-1 h1{
+  margin-top: 40px;
+  margin-left: 10px;
+  color: #333;
+}
+
+.j-s-b-block-2 {
+  z-index: 10;
+  height: 100%;
+  position: absolute;
+  right: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.j-s-b-block-3 {
+  z-index: 8;
+  height: 100%;
+  position: absolute;
+  left: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.j-skill-container{
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.j-skill-content{
+  position: relative;
+ 
+}
+
+.j-skill-content-main{
+  position: absolute;
+  top:21px;
+  left: 90px;
+  background: #e7e6e7;
+  width: 822px;
+  height: 560px;
+}
+
+.j-s-c-m-item{
+  width: 600px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  background: #333;
+  color: #fff;
+}
+
+.j-s-c-m-item h1{
+  width: 200px;
+  text-align: center;
+}
+
+/*============================================ 
+ *  Contact
+ *===========================================*/
+
+ .j-footer{
+   width: 100%;
+   height: 1080px;
+   background: #515151;
+   position: relative;
+ }
+
+ .j-footer-back-1{
+   position: absolute;
+    right: 0;
+    height: 100%;
+    width: 30%;
+    background: #333;
+ }
+
+ .j-footer-back-2{
+  position: absolute;
+   left: 20px;
+   height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.j-footer-container{
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.j-footer-container-main{
+  height: 100%;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+
+ .j-f-c-m-phone{
+  float: right;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.j-f-c-m-text{
+  width: 400px;
+  background: #dba444;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.j-f-c-m-text h1{
+  margin: 0;
+  font-size: 80px;
+}
+
+.j-f-c-m-text img{
+
+}
+
+
+
+.j-footer-announce{
+  border-top: 1px dashed #333;
+  position: absolute;
+  bottom: 40px;
+  width: 80%;
+  text-align: left;
 }
